@@ -1,0 +1,405 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.black{
+   width: 100%;
+   height: 100vh;
+   background-color: black;
+   opacity: 50%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1001;
+   display: none;
+}
+.intro{
+   width: 60%;
+   height: 60vh;
+   display: flex;
+   gap: 5vh;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   left: 18%;
+   top: 20%;
+   background-color: #7B68EE;
+   z-index: 1002;
+   border-radius: 20px;
+   display: none;
+}
+.intro p:nth-child(1),.hm{
+   font-family: 'Luckiest Guy', sans-serif;
+   margin: 20px;
+   font-size: 6em;
+   color: #777a8e;
+   text-shadow: 6px -7px 0px #000,   -2px -2px 0px #000, 2px -2px 0px #000,   -2px 2px 0px #000;   
+   animation-name: moving;
+   animation-duration: 1.5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+@keyframes moving {
+   0%{
+       transform: translateY(1);
+   }
+   25%{
+       transform: translateY(-10vh);
+   }
+   50%{
+       transform: rotate(10deg);
+   }
+   75%{
+       transform: rotate(-10deg);
+   }
+   100%{
+       transform: translateY(1);
+   }
+   
+}
+.intro p:nth-child(2),.sss p:nth-child(2){
+   font-family: 'Luckiest Guy', sans-serif;
+   font-size: 2em;
+   color: #777a8e;
+   text-shadow: 2px 2px 0px #000,   -2px -2px 0px #000, 2px -2px 0px #000,   -2px 2px 0px #000;   
+}
+
+.again, .choice button{
+  cursor: pointer;
+  border-radius: 10px;
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(65, 53, 190);
+  font-weight: bold;
+  color: white;
+  border: 2px solid black;
+  animation-name: btn;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes btn {
+    0%{
+       transform: scale(1);
+   }  
+   50%{
+       transform: scale(1.1);
+   }
+   100%{
+       transform: scale(1);
+   } 
+}
+header{
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color:rgb(65, 53, 190);
+   position: fixed;
+   z-index: 999;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.n1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.bitit{
+   margin-left: 20px;
+   width: 60px;
+   height: 60px;
+   background-color:rgb(195, 192, 192);
+   color: white;
+   font-size: 30px;
+   font-weight: 800;
+   border-radius: 50%;
+   padding-bottom: 10px;
+   border: 5px solid black;
+   z-index: 1000;
+}
+.num{
+   width: 300px;
+   height: 50px;
+   background-color: aliceblue;
+   margin-left: 290px;
+   position: absolute;
+   border: 7px solid black;
+   border-radius:15px ;
+}
+
+.num h1{
+   text-align: center;
+}
+
+
+.bordrgame{
+   width: 100%;
+   height: 100vh;
+   padding-top: 60px;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.imgdiv1{
+   width: 200px;
+   height: 70px;
+}
+.imgdiv1 img{
+   width: 60px;
+}
+.bordrgame{
+   width: auto;
+   height: auto;
+   display: flex;
+   margin-right: 30px;
+   border-radius: 25px;
+}
+.body{
+   background-color: #777a8e;
+   position: relative;
+}
+.text{
+   background-color: rgb(0, 0, 0);
+   display: grid;
+}
+.body, .text{
+   width: 720px;
+   height: 500px;
+   margin: 30px 5px 5px 5px;
+   border-radius: 25px;
+}
+.text .geme{
+   width: 95%;
+   height: 80px;
+   background-color: blueviolet;
+   border-radius: 15px;
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.text .miss{
+   width: 80%;
+   height: 70px;
+   background-color: white;
+   color: red;
+   border-radius: 15px;
+   margin: 0px 0px 5px 60px;
+   font-size: 30px;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.text .clavier{
+   width:90%;
+   height:300px;
+   background-color: blueviolet;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+   border-radius: 15px;
+}
+.text .clavier .keyBoard{
+   /* display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+   align-items: center;
+   margin: 40px 15px 8px 23px; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+/*the dead man start here*/
+.body div{
+   position: absolute;
+   background-color: black;
+}
+.hang{
+   background-color: black;
+   width:0.5vw;
+   height: 13vh;
+   left: 71%;
+   top: 10%;
+}
+.first{
+   bottom: 10%;
+   width: 18vw;
+   height: 13vh;
+}
+.second{
+   bottom: 22%;
+   left: 16.5%;
+   width:1.4vw;
+   height: 65vh;
+}
+.thered{
+   top: 09%;
+   left: 17%;
+   width:28vw;
+   height: 1vh;
+}
+.forth{
+   top: 14.5%;
+   left: 16%;
+   transform: rotate(140deg);
+   width:6.5vw;
+   height: 1vh;
+}
+/*the dead body its self*/
+.head{
+   width: 4vw;
+   height: 9vh;
+   left: 67.3%;
+   top: 21%;
+   border-radius: 50%;
+   display: none;
+
+}
+.head img{
+   position: absolute;
+   width: 30%;
+   height:2vh;
+   display: none;
+}
+.leftEye{
+   left: 60%;
+   top: 20%;
+}
+.rightEye{
+   left: 16%;
+   top: 20%;
+}
+.bodyd{
+   width: 0.4vw;
+   height: 13.6vh;
+   top: 29%;
+   left: 71%;
+   display: none;
+}
+.right{
+   width: 0.9%;
+   height: 8vh;
+   top: 32%;
+   left: 67.5%;
+   transform: rotate(60deg);
+   display: none;
+}
+.right-leg{
+   width: 0.9%;
+   height: 8vh;
+   top: 42%;
+   left: 67.5%;
+   transform: rotate(60deg);
+   display: none;
+}
+.left{
+   width: 0.9%;
+   height: 8vh;
+   top: 32%;
+   left: 74.5%;
+   transform: rotate(-60deg); 
+   display: none; 
+}
+.left-leg{
+   width: 0.9%;
+   height: 8vh;
+   top: 42%;
+   left: 74.5%;
+   transform: rotate(-60deg);
+   display: none;  
+}
+
+
+
+
+/*the dead man end here*/
+.key{
+   width: 55px;
+   height:55px;
+   color: white;
+   background-color: black;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   transition: 1.5s ease 3s ease-in-out;
+   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.key:hover{
+   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4), 0px 5px 10px rgba(0, 0, 0, 0.3);
+   transform: translateY(-5px);
+   background-color: white;
+   color: black;
+}
+
+.text .clavier .btnEnd{
+   display: flex;
+   justify-content: space-evenly;
+   
+    /* gap: 2px; */
+  /* margin: 15px 0px 8px 70px; */
+}
+.clicked{
+   background-color: rgb(224, 50, 50);
+}
+
+.hint{
+   background-color: white;
+   width: 90%;
+   height: 70px;
+   margin-left: 32px;
+   border: none;
+   border-radius: 10px;
+   text-align: center;
+}
+.hintp{
+   margin: 10px;
+   font-size: 20px;
+   
+}
+/*black2 and deffeculty style*/
+.test{
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   background-color: black;
+   opacity: 50%;
+   z-index: 1000;
+}
+.sss{
+   position: absolute;
+   left: 23%;
+   top: 26%;
+   width: 50vw;
+   height: 60vh;
+   background-color: #7B68EE;
+   z-index: 1001;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+   gap: 1vh;
+}
+.choice{
+   width: 40vw;
+   height: auto;
+   margin-top: 2vh;
+   display: flex;
+   justify-content: space-between;
+}
+
